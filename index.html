@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="stile.css">
+        <link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Roboto&display=swap" rel="stylesheet">
+        <script src="js/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <body>
+        <!--Header-->
+        <header>
+            <div class="header_logo">
+                <h1>IV</h1> 
+            </div>
+
+            <div class="header_menu">
+                <a class="menu_item" href="#intro">ГЛАВНАЯ</a> 
+                <a class="menu_item" href="#about_me">ОБ АВТОРЕ</a> 
+                <a class="menu_item" href="#my_projects">РАБОТЫ</a> 
+                <a class="menu_item" href="#process">ПРОЦЕССЫ</a> 
+                <a class="menu_item" href="#send">КОНТАКТЫ</a> 
+            </div>
+        </header>
+        <!--Main-->
+        <main>
+            <!--Intro-->
+            <section class="intro">
+                <a name="intro"></a>
+                <div class="intro_left">
+                    <img class="intro_img" src="images/logo/intro_logo.svg" alt="INTRO">
+                </div>
+
+                <div class="intro_right">
+                    <h1 class="intro_title" id="myTitle">
+                        Дизайн и верстка
+                    </h1>
+                    <p class="intro_text">
+                      Всю подробную информацию можно узнать написав мне.
+                    </p>
+
+                    <button class="intro_button" id="myBtn">НАПИСАТЬ МНЕ</button>
+                    <div class="modal" id="myModal">
+                        <div class="modal_content" id="cont">
+                            <div class="close" id="myClose">&times;</div>
+                            <div class="send_wrapper">
+                                <h1 class="modal_title">
+                                    Хотите веб-сайт?
+                                </h1>
+                                <form>
+                                    <div class="send_form">
+                                        <div>
+                                            <input type="text" class="form1 formstyle" placeholder="Ваше Имя">
+                                            <input type="email" class="form2 formstyle" placeholder="Ваш e-mail">
+                                        </div>
+                                        <div>
+                                            <textarea class="form3 formstyle" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                                        </div>
+                                        <button class="send_button">ОТПРАВИТЬ</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--About Me-->
+            <section class="about_me" id="about1_me">
+                <a name="about_me"></a>
+                <div class="wrapper">
+                    <div class="about_wrapper">
+                        <div class="about_block">
+                            <h2 class="about_title">Обо мне</h2>
+
+                            <p class="about_text">
+                                Приветствую Вас на своем сайте-портфолио. Меня зовут Владислав. Живу в Санкт-Петербурге. 
+                                Занимаюсь HTML-версткой сайтов. У меня полностью кроссбраузерная, адаптивная и валидная верстка. 
+                                Динамика сайта организуется собственным jQuery кодом или настроенными плагинами. В конце работы осуществляется проверка отображения верстки в различных браузерах на разных устройствах.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Projects-->
+            <section class="my_projects">
+                <a name="my_projects"></a>
+                <div class="wrapper">
+                    <div class="my_projects_wrapper">
+                        <div class="my_projects_block">
+                            <img src="images/numbers_item.svg" alt="num" class="project_img">
+                            <img src="images/numbers_item.svg" alt="num" class="project_img">
+                            <img src="images/numbers_item.svg" alt="num" class="project_img">
+                            <img src="images/numbers_item.svg" alt="num" class="project_img">
+                            <img src="images/numbers_item.svg" alt="num" class="project_img">
+                            <img src="images/numbers_item.svg" alt="num" class="project_img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Skills-->
+            <section class="skills">
+                <div class="wrapper">
+                    <div class="skills_wrapper">
+                        <div class="skills_left">
+                            <h3 class="skills_title">Мои навыки</h3>
+                            <h4 class="skill skill1">HTML5/CSS3</h4>
+                            <h4 class="skill skill2">Javascript/JQuery</h4>
+                            <h4 class="skill skill3">Photoshop/Figma</h4>
+                        </div>
+                             
+                        <div class="skill right">
+                            <img src="images/Myphoto.jpg" alt="photo" class="skills_img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Process-->
+            <section class="process">
+                <a name = "process"></a>
+                <div class="wrapper">
+                    <div class="process_wrapper">
+                        <div class="process_block">
+                            <h1 class="process_title">Как я работаю</h1>
+                            <p class="process_text">
+                                Работа с макетом -> Верстка контента -> Стилизация сайта -> Адаптивная верстка -> Проверка в браузерах -> Устранение ошибок
+                            </p>
+                        </div>
+                        <video src="video/video.mp4" class="process_video" controls="controls"></video>
+                    </div>
+                </div>
+            </section>
+            <!--Gallery-->
+            <section>
+                <div class="gallery">
+                    <div class="gallery_str">
+                        <a href="images/gallery_img1.png" class="lightzoom">
+                            <img src="images/gallery_img1.png" alt="картинка1" class="gallery_img">
+                        </a>
+                        <a href="images/gallery_img2.png" class="lightzoom">
+                            <img src="images/gallery_img2.png" alt="картинка2" class="gallery_img">
+                        </a>
+                        <a href="images/gallery_img1.png" class="lightzoom">
+                            <img src="images/gallery_img1.png" alt="картинка1" class="gallery_img">
+                        </a>
+                        <a href="images/gallery_img2.png" class="lightzoom">
+                            <img src="images/gallery_img2.png" alt="картинка2" class="gallery_img">
+                        </a>
+                    </div>
+
+                    <div class="gallery_str">
+                        <a href="images/gallery_img1.png" class="lightzoom">
+                            <img src="images/gallery_img1.png" alt="картинка1" class="gallery_img">
+                        </a>
+                        <a href="images/gallery_img2.png" class="lightzoom">
+                            <img src="images/gallery_img2.png" alt="картинка2" class="gallery_img">
+                        </a>
+                        <a href="images/gallery_img1.png" class="lightzoom">
+                            <img src="images/gallery_img1.png" alt="картинка1" class="gallery_img">
+                        </a>
+                        <a href="images/gallery_img2.png" class="lightzoom">
+                            <img src="images/gallery_img2.png" alt="картинка2" class="gallery_img">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--Logo Microsoft-->
+            <section>
+                <div class="microsoft_img">
+                    <div class="platform">  
+                        <img src="images/Rectangle 9.2.svg" alt="Microsoft" class="company_img">
+                        <img src="images/Rectangle 9.2.svg" alt="Microsoft" class="company_img">
+                        <img src="images/Rectangle 9.2.svg" alt="Microsoft" class="company_img">
+                        <img src="images/Rectangle 9.2.svg" alt="Microsoft" class="company_img">
+                    </div>
+                </div>
+            </section>
+            <!--Send-->
+            <section class="send">
+                <a name = "send"></a>
+                <div class="wrapper">
+                    <div class="send_wrapper">
+                        <h1 class="send_title">Хотите веб-сайт?
+                        </h1>
+                        <p class="send_text">
+                            Для того, чтобы определить сроки выполнеия и стоимость работ мне необходимы макеты сайта и техническое задание с требованиями по выполнению проекта.
+                        </p>
+                        <form>
+                            <div class="send_form">
+                                <div>
+                                    <input type="text" class="form1 formstyle" placeholder="Ваше Имя">
+                                    <input type="email" class="form2 formstyle" placeholder="Ваш e-mail">
+                                </div>
+                                <div>
+                                    <textarea class="form3 formstyle" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                                </div>
+                                <button class="send_button">ОТПРАВИТЬ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--Footer-->
+        <footer>
+            <div class="wrapper">
+                <div class="footer_wrapper">
+                    <div class="footer_left">
+                        <h3 class="footer_name">Ильченко Владислав</h3>
+                        <p class="copyright">(c) 2020. Все права защищены.</p>
+                    </div>
+
+                    <div class="footer_right">
+                       <a href="https://vk.com/ilchenkovladislav" target="_blank"> <img src="images/logo/vk-social-network-logo.png" alt="VK" class="soc_logo"> </a>
+                        <img src="images/logo/odnoklassniki_PNG29.png" alt="odnoklassniki" class="soc_logo_">
+                        <img src="images/logo/Facebook-logo-500x350.png" alt="Facebook" class="soc_logo_facebook">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <link rel="stylesheet" href="lightzoom/style.css" type="text/css">
+        <script type="text/javascript" src="lightzoom/lightzoom.js"></script>
+        <script type="text/javascript">jQuery('.lightzoom').lightzoom({speed: 400, viewTitle: true, isOverlayClickClosing: true});</script>
+        <script src="js/myscript.js"></script>
+    </body>
+
+</html>
